@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import { Link } from "react-router-dom";
-
 import ServerError from "./500";
 import Loading from "parts/Loading";
 import courses from "constants/api/courses";

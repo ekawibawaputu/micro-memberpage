@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
-import { useDispatch } from "react-redux";
 
 import users from "constants/api/users";
 
@@ -10,8 +9,6 @@ import fieldErrors from "helpers/fieldErrors";
 import Input from "components/Form/Input";
 
 function LoginForm({ history }) {
-  const dispatch = useDispatch();
-
   const [{ name, email, password, profession, otherProfession }, setState] =
     useForm({
       name: "",
